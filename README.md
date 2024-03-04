@@ -6,5 +6,3 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 Vercel
 <https://nextjs-dashboard-omega-five-86.vercel.app/>
-
-hello
