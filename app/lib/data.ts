@@ -52,6 +52,51 @@ export async function fetchLatestInvoices() {
   }
 }
 
+export async function fetchTotalPendingInvoices() {
+  try {
+    const totalPendingInvoicesPromise = await sql`SELECT COUNT(*) FROM invoices WHERE status = 'pedning'`
+    const totalPendingInvoices = Number(totalPendingInvoicesPromise.rows[0].count ?? '0')
+    return totalPendingInvoices
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch total pending invoices.');
+  }
+}
+
+export async function fetchTotalPaidInvoices() {
+  try {
+    const totalPaidInvoicesPromise = await sql`SELECT COUNT(*) FROM invoices WHERE status = 'paid'`
+    const totalPaidInvoices = Number(totalPaidInvoicesPromise.rows[0].count ?? '0')
+    return totalPaidInvoices
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch total paid invoices.');
+  }
+}
+
+export async function fetchNumberOfInvoices() {
+  try {
+    const numberOfInvoicesPromise = await sql`SELECT COUNT(*) FROM invoices`
+    const numberOfInvoices = Number(numberOfInvoicesPromise.rows[0].count ?? '0')
+    return numberOfInvoices
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch number of invoices.');
+  }
+}
+
+export async function fetchNumberOfCustomers() {
+  try {
+    const numberOfCustomersPromise = await sql`SELECT COUNT(*) FROM users`
+    const numberOfCustomers = Number(numberOfCustomersPromise.rows[0].count ?? '0')
+    return numberOfCustomers
+  }
+  catch(error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch number of customers.');
+  }
+}
+
 export async function fetchCardData() {
   try {
     // You can probably combine these into a single SQL query
