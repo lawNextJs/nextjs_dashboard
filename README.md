@@ -9,6 +9,7 @@ Vercel
 
 current lesson
 <https://nextjs.org/learn/dashboard-app/mutating-data>
+<https://nextjs.org/learn/dashboard-app/error-handling>
 
 sample query (user name, invoice date, invoice status is 'paid')
 select customers_list.name, status, date from invoices join (select name, id from customers) as customers_list on customers_list.id = customer_id and status = 'paid' order by customers_list.name
