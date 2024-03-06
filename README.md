@@ -56,24 +56,22 @@ select customers.name, sum(amount) from invoices join (select id, name from cust
     - console.log("hello") [X]
 - tab size = 2
 
-### test email
+---
 
-<user@nextmail.com>
+### attention lesson
+
+- <https://nextjs.org/learn/dashboard-app/partial-prerendering>
+- <https://nextjs.org/learn/dashboard-app/adding-authentication>
+
+### question
+
+- <https://nextjs.org/learn/dashboard-app/improving-accessibility>
+- how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at @/app/lib/actions.ts)
+- => defined form action like that `<form action={dispatch}>` and dispatch is defined with `useFormState`
 
 ---
 
-attention lesson
-<https://nextjs.org/learn/dashboard-app/partial-prerendering>
-<https://nextjs.org/learn/dashboard-app/adding-authentication>
-
-question
-<https://nextjs.org/learn/dashboard-app/improving-accessibility>
-how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at @/app/lib/actions.ts)
-=> defined form action like that `<form action={dispatch}>` and dispatch is defined with `useFormState`
-
----
-
-TODO
+### TODO
 
 - [x] make to list
 - [ ] remove below components at `@/app/lib/data.ts` and check syncronize data
