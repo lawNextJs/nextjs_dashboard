@@ -77,13 +77,15 @@ select customers.name, sum(amount) from invoices join (select id, name from cust
 - [x] make to list
 - [ ] remove below components at `@/app/lib/data.ts` and check syncronize data
 
-```import { unstable_noStore as noStore } from 'next/cache'
+```@/app/lib/data.ts
+import { unstable_noStore as noStore } from 'next/cache'
 noStore()
 ```
 
 - [ ] create AUTH_SECRET
 
-```openssl rand -base64 32
+```generate key
+openssl rand -base64 32
 ```
 
 - [ ] analyze [auth](https://nextjs.org/learn/dashboard-app/adding-authentication) logic
