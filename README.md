@@ -67,6 +67,8 @@ how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at
 
 TODO
 
+0. [x] make to list
+
 1. [ ] remove below components at `@/app/lib/data.ts` and check syncronize data
 ```
 import { unstable_noStore as noStore } from 'next/cache'
