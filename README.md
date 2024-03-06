@@ -4,9 +4,13 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-## publishing
+## Hosting by
 
 - [Vercel](https://nextjs-dashboard-omega-five-86.vercel.app/)
+
+## As Is
+
+- [NextJs-14-dashboard-sample](https://nextjs-dashboard-7wb3cqb4f-nonames-projects-14106afd.vercel.app/)
 
 ## Progress
 
