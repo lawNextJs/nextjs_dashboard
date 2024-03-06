@@ -4,12 +4,13 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-Vercel
-<https://nextjs-dashboard-omega-five-86.vercel.app/>
+## publishing
+- [Vercel](https://nextjs-dashboard-omega-five-86.vercel.app/)
 
-current lesson
-<https://nextjs.org/learn/dashboard-app/mutating-data>
-<https://nextjs.org/learn/dashboard-app/error-handling>
+## Progress
+- [Progress-0: mutating-data](https://nextjs.org/learn/dashboard-app/mutating-data)
+- [Progress-1: error-handling](https://nextjs.org/learn/dashboard-app/error-handling)
+- [Progress-2: error-handling](https://nextjs.org/learn/dashboard-app/error-handling)
 
 sample query (user name, invoice date, invoice status is 'paid')
 select customers_list.name, status, date from invoices join (select name, id from customers) as customers_list on customers_list.id = customer_id and status = 'paid' order by customers_list.name
