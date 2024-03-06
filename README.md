@@ -81,5 +81,4 @@ noStore()
 
 - [ ] analyze [auth](https://nextjs.org/learn/dashboard-app/adding-authentication) logic
 - [ ] The Next.js Metadata API is powerful and flexible, giving you full control over your application's metadata. Here, we've shown you how to add some basic metadata, but you can add multiple fields, including keywords, robots, canonical, and more. Feel free to explore the [documentation](https://nextjs.org/docs/app/api-reference/functions/generate-metadata), and add any additional metadata you want to your application.
-- [ ] Complete Customers page.
-<http://localhost:3000/dashboard/customers>
+- [ ] Complete [Customers page](http://localhost:3000/dashboard/customers) (localhost page url)
