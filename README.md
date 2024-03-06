@@ -68,7 +68,7 @@ select customers.name, sum(amount) from invoices join (select id, name from cust
 
 - <https://nextjs.org/learn/dashboard-app/improving-accessibility>
 - how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at @/app/lib/actions.ts)
-- => defined form action like that `<form action={dispatch}>` and dispatch is defined with `useFormState`
+  - defined form action like that `<form action={dispatch}>` and dispatch is defined with `useFormState`
 
 ---
 
