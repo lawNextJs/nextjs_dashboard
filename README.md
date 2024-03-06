@@ -11,9 +11,6 @@ current lesson
 <https://nextjs.org/learn/dashboard-app/mutating-data>
 <https://nextjs.org/learn/dashboard-app/error-handling>
 
-attention lesson
-<https://nextjs.org/learn/dashboard-app/partial-prerendering>
-
 sample query (user name, invoice date, invoice status is 'paid')
 select customers_list.name, status, date from invoices join (select name, id from customers) as customers_list on customers_list.id = customer_id and status = 'paid' order by customers_list.name
 
@@ -49,3 +46,29 @@ convention
       - console.log('hello') [O]
       - console.log("hello") [X]
     - tab size = 2
+
+test email: <user@nextmail.com>
+
+---
+
+attention lesson
+<https://nextjs.org/learn/dashboard-app/partial-prerendering>
+<https://nextjs.org/learn/dashboard-app/adding-authentication>
+
+question
+<https://nextjs.org/learn/dashboard-app/improving-accessibility>
+how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at @/app/lib/actions.ts)
+=> defined form action like that `<form action={dispatch}>` and dispatch is defined with `useFormState`
+
+---
+
+TODO
+
+1.[ ] remove below components at `@/app/lib/data.ts` and check syncronize data
+> import { unstable_noStore as noStore } from 'next/cache'
+> noStore()
+
+2.[ ] create AUTH_SECRET
+> openssl rand -base64 32
+
+3.[ ] analyze auth logic

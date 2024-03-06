@@ -11,7 +11,7 @@ import {
 import { formatCurrency } from './utils';
 import { unstable_noStore as noStore } from 'next/cache'
 
-// export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic"
 
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
@@ -172,6 +172,8 @@ export async function fetchInvoiceById(id: string) {
       // Convert amount from cents to dollars
       amount: invoice.amount / 100,
     }));
+
+    console.log(invoice)
 
     return invoice[0];
   } catch (error) {
