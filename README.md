@@ -6,7 +6,7 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 ## Hosting by
 
-- [Vercel](https://nextjs-dashboard-omega-five-86.vercel.app/)
+- [Vercel](https://vercel.com/)
 
 ## As Is
 
