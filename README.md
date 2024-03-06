@@ -68,13 +68,17 @@ how to bind 'submit' (at @/app/ui/invoices/create-form.tsx) to createInvoice (at
 TODO
 
 1.[ ] remove below components at `@/app/lib/data.ts` and check syncronize data
-> import { unstable_noStore as noStore } from 'next/cache'
-> noStore()
+```
+import { unstable_noStore as noStore } from 'next/cache'
+noStore()
+```
 
 2.[ ] create AUTH_SECRET
-> openssl rand -base64 32
+```
+openssl rand -base64 32
+```
 
-3.[ ] analyze auth logic
+3.[ ] analyze [auth](https://nextjs.org/learn/dashboard-app/adding-authentication) logic
 
 4.[ ]The Next.js Metadata API is powerful and flexible, giving you full control over your application's metadata. Here, we've shown you how to add some basic metadata, but you can add multiple fields, including keywords, robots, canonical, and more. Feel free to explore the [documentation](https://nextjs.org/docs/app/api-reference/functions/generate-metadata), and add any additional metadata you want to your application.
 
