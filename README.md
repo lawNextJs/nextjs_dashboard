@@ -8,12 +8,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - [Vercel](https://nextjs-dashboard-omega-five-86.vercel.app/)
 
-
 ## Progress
 
 - [Progress-0: mutating-data](https://nextjs.org/learn/dashboard-app/mutating-data)
 - [Progress-1: error-handling](https://nextjs.org/learn/dashboard-app/error-handling)
-- [Progress-2: error-handling](https://nextjs.org/learn/dashboard-app/error-handling)
+- [Progress-2: next-steps](https://nextjs.org/learn/dashboard-app/next-steps)
 
 sample query (user name, invoice date, invoice status is 'paid')
 select customers_list.name, status, date from invoices join (select name, id from customers) as customers_list on customers_list.id = customer_id and status = 'paid' order by customers_list.name
@@ -78,3 +77,6 @@ TODO
 3.[ ] analyze auth logic
 
 4.[ ]The Next.js Metadata API is powerful and flexible, giving you full control over your application's metadata. Here, we've shown you how to add some basic metadata, but you can add multiple fields, including keywords, robots, canonical, and more. Feel free to explore the [documentation](https://nextjs.org/docs/app/api-reference/functions/generate-metadata), and add any additional metadata you want to your application.
+
+5.[ ]Complete Customers page.
+> <http://localhost:3000/dashboard/customers>
