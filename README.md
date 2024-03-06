@@ -72,3 +72,5 @@ TODO
 > openssl rand -base64 32
 
 3.[ ] analyze auth logic
+
+4.[ ]The Next.js Metadata API is powerful and flexible, giving you full control over your application's metadata. Here, we've shown you how to add some basic metadata, but you can add multiple fields, including keywords, robots, canonical, and more. Feel free to explore the <a href='https://nextjs.org/docs/app/api-reference/functions/generate-metadata'>documentation, and add any additional metadata you want to your application.
